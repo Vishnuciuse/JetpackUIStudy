@@ -1,33 +1,26 @@
-package com.example.jetpackuistudy
+package com.example.storybook
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextField
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
-import androidx.compose.material3.*
 import androidx.compose.runtime.getValue
-import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
-import androidx.lifecycle.viewmodel.compose.viewModel
-import androidx.compose.ui.Alignment
-import androidx.compose.ui.text.input.TextFieldValue
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.jetpackuistudy.ui.theme.JetpackUIStudyTheme
 
@@ -38,48 +31,38 @@ class MainActivity3 : ComponentActivity() {
         setContent {
             JetpackUIStudyTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    MyScreen(
-                        modifier = Modifier.padding(innerPadding)
-                    )
+                    UpdateTextView(Modifier.padding(innerPadding))
                 }
             }
         }
     }
 }
 
+
 @Composable
-fun MyScreen(modifier: Modifier = Modifier,viewModel: MyViewModel = viewModel()) {
-    // Get the text from ViewModel
-    val text by viewModel.text.observeAsState("")
+fun UpdateTextView(modifier: Modifier = Modifier) {
+    // State variable to hold the text
+    var text by remember { mutableStateOf("Initial Text") }
 
-    // State to hold the input from the TextField
-    var input by remember { mutableStateOf(TextFieldValue()) }
-
-    // UI Layout
     Column(
         modifier = Modifier
-            .fillMaxSize()
-            .padding(16.dp),
-        horizontalAlignment = Alignment.CenterHorizontally,
-        verticalArrangement = Arrangement.Center
+            .fillMaxWidth()
+            .padding(16.dp)
     ) {
+        // TextField to update the text
         TextField(
-            value = input,
-            onValueChange = { input = it },
-            label = { Text("Enter new text") },
+            value = text,
+            onValueChange = { newText ->
+                // Update the state with new text
+                text = newText
+            },
+            label = { Text("Enter Text") },
             modifier = Modifier.fillMaxWidth()
         )
 
         Spacer(modifier = Modifier.height(16.dp))
 
-        Button(onClick = {
-            viewModel.updateText(input.text)
-        }) {
-            Text("Update Text")
-        }
-
-        Spacer(modifier = Modifier.height(16.dp))
-
+        // Text that displays the updated value
         Text(
             text = text,
             style = MaterialTheme.typography.bodyLarge
@@ -91,16 +74,6 @@ fun MyScreen(modifier: Modifier = Modifier,viewModel: MyViewModel = viewModel())
 @Composable
 fun GreetingPreview() {
     JetpackUIStudyTheme {
-
-    }
-}
-
-class MyViewModel : ViewModel() {
-
-    private val _text = MutableLiveData<String>("Hello, Jetpack Compose!")
-    val text: LiveData<String> = _text
-
-    fun updateText(newText: String) {
-        _text.value = newText
+        UpdateTextView()
     }
 }
