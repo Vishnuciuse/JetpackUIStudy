@@ -13,6 +13,11 @@
         android:theme="@style/Theme.JetpackUIStudy"
         tools:targetApi="31">
         <activity
+            android:name=".WalkThoughActivity1"
+            android:exported="false"
+            android:label="@string/title_activity_walk_though1"
+            android:theme="@style/Theme.JetpackUIStudy" />
+        <activity
             android:name=".MainActivity4"
             android:exported="false"
             android:label="@string/title_activity_main4"
