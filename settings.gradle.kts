@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Jetpack UI study"
 include(":app")
-include(":composeelements")
+//include(":composeelements")

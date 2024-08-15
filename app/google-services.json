@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "129191662893",
+    "project_id": "jetpack-ui-study",
+    "storage_bucket": "jetpack-ui-study.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:129191662893:android:7d10718df030d347ccafa4",
+        "android_client_info": {
+          "package_name": "com.example.jetpackuistudy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9Qje2C8jDy2E2kqSziRPnclDT8a3QpV0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

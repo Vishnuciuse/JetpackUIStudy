@@ -31,7 +31,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.composeelements.ExpantableViewActivity
+//import com.example.composeelements.ExpantableViewActivity
 import com.example.jetpackuistudy.Constants.CollapseAnimation
 import com.example.jetpackuistudy.Constants.ExpandAnimation
 import com.example.jetpackuistudy.Constants.FadeInAnimation
