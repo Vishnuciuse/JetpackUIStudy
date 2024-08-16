@@ -1,0 +1,86 @@
+[
+    {
+        "merged": "C:\\Users\\Vishnu\\.gradle\\daemon\\8.7\\com.example.jetpackuistudy.app-debug-77:\\layout_activity_whats_app.xml.flat",
+        "source": "C:\\Users\\Vishnu\\.gradle\\daemon\\8.7\\com.example.jetpackuistudy.app-main-79:\\layout\\activity_whats_app.xml"
+    },
+    {
+        "merged": "C:\\Users\\Vishnu\\.gradle\\daemon\\8.7\\com.example.jetpackuistudy.app-debug-77:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Vishnu\\.gradle\\daemon\\8.7\\com.example.jetpackuistudy.app-main-79:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\Vishnu\\.gradle\\daemon\\8.7\\com.example.jetpackuistudy.app-debug-77:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Vishnu\\.gradle\\daemon\\8.7\\com.example.jetpackuistudy.app-main-79:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Vishnu\\.gradle\\daemon\\8.7\\com.example.jetpackuistudy.app-debug-77:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\Vishnu\\.gradle\\daemon\\8.7\\com.example.jetpackuistudy.app-main-79:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Vishnu\\.gradle\\daemon\\8.7\\com.example.jetpackuistudy.app-debug-77:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Vishnu\\.gradle\\daemon\\8.7\\com.example.jetpackuistudy.app-main-79:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Vishnu\\.gradle\\daemon\\8.7\\com.example.jetpackuistudy.app-debug-77:\\layout_activity_google_login.xml.flat",
+        "source": "C:\\Users\\Vishnu\\.gradle\\daemon\\8.7\\com.example.jetpackuistudy.app-main-79:\\layout\\activity_google_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\Vishnu\\.gradle\\daemon\\8.7\\com.example.jetpackuistudy.app-debug-77:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\Vishnu\\.gradle\\daemon\\8.7\\com.example.jetpackuistudy.app-main-79:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\Vishnu\\.gradle\\daemon\\8.7\\com.example.jetpackuistudy.app-debug-77:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Vishnu\\.gradle\\daemon\\8.7\\com.example.jetpackuistudy.app-main-79:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Vishnu\\.gradle\\daemon\\8.7\\com.example.jetpackuistudy.app-debug-77:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Vishnu\\.gradle\\daemon\\8.7\\com.example.jetpackuistudy.app-main-79:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Vishnu\\.gradle\\daemon\\8.7\\com.example.jetpackuistudy.app-debug-77:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Vishnu\\.gradle\\daemon\\8.7\\com.example.jetpackuistudy.app-main-79:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Vishnu\\.gradle\\daemon\\8.7\\com.example.jetpackuistudy.app-debug-77:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Vishnu\\.gradle\\daemon\\8.7\\com.example.jetpackuistudy.app-main-79:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Vishnu\\.gradle\\daemon\\8.7\\com.example.jetpackuistudy.app-debug-77:\\drawable_round_arrow_right.xml.flat",
+        "source": "C:\\Users\\Vishnu\\.gradle\\daemon\\8.7\\com.example.jetpackuistudy.app-main-79:\\drawable\\round_arrow_right.xml"
+    },
+    {
+        "merged": "C:\\Users\\Vishnu\\.gradle\\daemon\\8.7\\com.example.jetpackuistudy.app-debug-77:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Vishnu\\.gradle\\daemon\\8.7\\com.example.jetpackuistudy.app-main-79:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\Vishnu\\.gradle\\daemon\\8.7\\com.example.jetpackuistudy.app-debug-77:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Vishnu\\.gradle\\daemon\\8.7\\com.example.jetpackuistudy.app-main-79:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Vishnu\\.gradle\\daemon\\8.7\\com.example.jetpackuistudy.app-debug-77:\\layout_item_status.xml.flat",
+        "source": "C:\\Users\\Vishnu\\.gradle\\daemon\\8.7\\com.example.jetpackuistudy.app-main-79:\\layout\\item_status.xml"
+    },
+    {
+        "merged": "C:\\Users\\Vishnu\\.gradle\\daemon\\8.7\\com.example.jetpackuistudy.app-debug-77:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Vishnu\\.gradle\\daemon\\8.7\\com.example.jetpackuistudy.app-main-79:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Vishnu\\.gradle\\daemon\\8.7\\com.example.jetpackuistudy.app-debug-77:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Vishnu\\.gradle\\daemon\\8.7\\com.example.jetpackuistudy.app-main-79:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Vishnu\\.gradle\\daemon\\8.7\\com.example.jetpackuistudy.app-debug-77:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\Vishnu\\.gradle\\daemon\\8.7\\com.example.jetpackuistudy.app-main-79:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\Vishnu\\.gradle\\daemon\\8.7\\com.example.jetpackuistudy.app-debug-77:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Vishnu\\.gradle\\daemon\\8.7\\com.example.jetpackuistudy.app-main-79:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.jetpackuistudy.app-debug-77:/layout_activity_google_login.xml.flat",
+        "source": "com.example.jetpackuistudy.app-main-79:/layout/activity_google_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\Vishnu\\.gradle\\daemon\\8.7\\com.example.jetpackuistudy.app-debug-77:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\Vishnu\\.gradle\\daemon\\8.7\\com.example.jetpackuistudy.app-main-79:\\xml\\data_extraction_rules.xml"
+    }
+]

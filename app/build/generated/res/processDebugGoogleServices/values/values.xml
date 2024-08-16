@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gcm_defaultSenderId" translatable="false">129191662893</string>
+    <string name="google_api_key" translatable="false">AIzaSyD9Qje2C8jDy2E2kqSziRPnclDT8a3QpV0</string>
+    <string name="google_app_id" translatable="false">1:129191662893:android:7d10718df030d347ccafa4</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyD9Qje2C8jDy2E2kqSziRPnclDT8a3QpV0</string>
+    <string name="google_storage_bucket" translatable="false">jetpack-ui-study.appspot.com</string>
+    <string name="project_id" translatable="false">jetpack-ui-study</string>
+</resources>
