@@ -1,9 +1,5 @@
-package com.example.jetpackuistudy
+package com.example.composeelements
 
-import android.os.Bundle
-import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import androidx.activity.enableEdgeToEdge
 import androidx.compose.animation.animateContentSize
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.animation.core.tween
@@ -12,6 +8,7 @@ import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
@@ -20,6 +17,7 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.material3.Checkbox
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -34,25 +32,54 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-
-class WalkThoughActivity : ComponentActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContent {
-            Column {
-                ExpandableCardView()
-                ExpandableCardView()
-                ExpandableCardView()
-            }
-        }
-    }
-}
+import com.example.composeelements.data.BodyContent
+import com.example.composeelements.data.SubContent
+import com.example.composeelements.data.walkThoughData
+import com.example.composeelements.ui.theme.JetpackUIStudyTheme
+import java.text.SimpleDateFormat
+import java.util.Date
+import java.util.Locale
 
 @Composable
-fun ExpandableCardView() {
+fun ExpandableCardView(items: List<String>) {
+
     var expanded by remember { mutableStateOf(false) }
     var checked by remember { mutableStateOf(false) }
+
+    var listItems = mutableListOf<walkThoughData>()
+
+    // Create a date formatter
+    val dateFormatter = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
+
+    // Get the current date
+    val currentDate: String = dateFormatter.format(Date())
+
+    // Create subcontent items
+    val subContent1 = SubContent(title = "Subheading 1", description = "Description 1")
+    val subContent2 = SubContent(title = "Subheading 2", description = "Description 2")
+
+    // Create body content items
+    val bodyContent1 = BodyContent(
+        heading = "Main Body Heading 1",
+        subContents = listOf(subContent1, subContent2)
+    )
+
+    val bodyContent2 = BodyContent(
+        heading = "Main Body Heading 2",
+        subContents = listOf(subContent1)
+    )
+
+    // Create the main content with the current date as the main heading
+    val mainContent = walkThoughData(
+        mainHeading = "Today's Date: $currentDate",
+        bodyContents = listOf(bodyContent1, bodyContent2)
+    )
+
+    listItems.add(mainContent)
+    listItems.add(mainContent)
+    listItems.add(mainContent)
+
+
 
     val rotationAngle by animateFloatAsState(
         targetValue = if (expanded) 90f else 0f,
@@ -130,5 +157,9 @@ fun ExpandableCardView() {
 @Preview(showBackground = true)
 @Composable
 fun ExpandableCardPreview() {
-    ExpandableCardView()
+    JetpackUIStudyTheme {
+        Surface(modifier = Modifier.fillMaxSize()) {
+            ExpandableCardView(items = List(20) { "Item $it" })
+        }
+        }
 }

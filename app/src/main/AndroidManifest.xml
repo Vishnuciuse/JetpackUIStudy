@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
-
     <uses-permission
         android:name="android.permission.READ_EXTERNAL_STORAGE"
         android:maxSdkVersion="32" />
@@ -25,11 +24,19 @@
         android:theme="@style/Theme.JetpackUIStudy"
         tools:targetApi="31">
 
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <meta-data
+            android:name="com.google.mlkit.vision.DEPENDENCIES"
+            android:value="barcode_ui"/>
+
         <!-- <activity -->
         <!-- android:name=".MainActivity3" -->
         <!-- android:exported="false" /> -->
         <activity
-            android:name=".WalkThoughActivity1"
+            android:name=".walkThrough.WalkThoughActivity1"
             android:exported="false"
             android:label="@string/title_activity_walk_though1"
             android:theme="@style/Theme.JetpackUIStudy" />
@@ -52,7 +59,10 @@
             android:name=".whatsapp.WhatsAppActivity"
             android:exported="false" />
         <activity
-            android:name=".google_login.GoogleLoginActivity"
+            android:name=".walkThrough.WalkThoughActivity"
+            android:exported="false" />
+        <activity
+            android:name=".codescanner.MainActivity10"
             android:exported="true"
             android:label="@string/app_name"
             android:launchMode="singleTop"

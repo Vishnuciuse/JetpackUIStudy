@@ -1,4 +1,4 @@
-package com.example.jetpackuistudy
+package com.example.jetpackuistudy.walkThrough
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -27,15 +27,19 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.example.jetpackuistudy.R
+import com.example.jetpackuistudy.notes.MainRecyclerView
+import com.example.jetpackuistudy.notes.MyApp
 //import com.example.composeelements.ExpantableViewActivity
-import com.example.jetpackuistudy.Constants.CollapseAnimation
-import com.example.jetpackuistudy.Constants.ExpandAnimation
-import com.example.jetpackuistudy.Constants.FadeInAnimation
-import com.example.jetpackuistudy.Constants.FadeOutAnimation
+import com.example.jetpackuistudy.walkThrough.Constants.CollapseAnimation
+import com.example.jetpackuistudy.walkThrough.Constants.ExpandAnimation
+import com.example.jetpackuistudy.walkThrough.Constants.FadeInAnimation
+import com.example.jetpackuistudy.walkThrough.Constants.FadeOutAnimation
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <CheckBox
+        android:id="@+id/allow_manual_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:onClick="onAllowManualInputCheckboxClicked"
+        android:text="Allow manual Input" />
+    <CheckBox
+        android:id="@+id/enable_auto_zoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:onClick="onEnableAutoZoomCheckboxClicked"
+        android:text="Enable auto Zoom" />
+    <Button
+        android:id="@+id/scan_barcode_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onScanButtonClicked"
+        android:text="Scan QR code" />
+    <TextView
+        android:id="@+id/barcode_result_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="" />
+</LinearLayout>

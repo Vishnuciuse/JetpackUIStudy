@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
     alias(libs.plugins.google.gms.google.services)
+
 }
 
 android {
@@ -12,6 +13,7 @@ android {
         applicationId = "com.example.jetpackuistudy"
         minSdk = 24
         targetSdk = 34
+        buildToolsVersion = "34.0.0"
         versionCode = 1
         versionName = "1.0"
 
@@ -31,11 +33,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "17"
     }
     buildFeatures {
         compose = true
@@ -52,7 +54,7 @@ android {
 
 dependencies {
 
-//    implementation(project (":composeelements"))
+    implementation(project (":composeelements"))
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
@@ -74,6 +76,8 @@ dependencies {
     implementation (libs.glide)
     implementation(libs.firebase.analytics)
     implementation(libs.firebase.auth)
+    implementation(libs.play.services.code.scanner)
+    implementation(libs.common)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -86,6 +90,7 @@ dependencies {
 
     implementation (platform("com.google.firebase:firebase-bom:33.1.2"))
     implementation ("com.google.android.gms:play-services-auth:21.2.0")
+
 
 
 }
